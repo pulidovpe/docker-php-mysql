@@ -36,6 +36,9 @@ docker-compose down
 ```
 
 Una vez ejecutándose, puede abrirse un navegador y dirigirse a la dirección http://localhost:8080 para ver la aplicación web. Ó, si desea revisarse la base de datos usando la aplicación phpmyadmin, basta con dirigirse a la url http://localhost:8181
+Para ingresar en la app usar estos valores:
+- Usuario: 99009009
+- Contraseña: 123456
 
 En caso de que se quisiera entrar a un contenedor sin usar el docker-compose, puede hacerse ejecutándolo de manera individual:
 ```Shell
