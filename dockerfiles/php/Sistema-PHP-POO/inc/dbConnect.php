@@ -1,7 +1,7 @@
 <?php
  /**
   * Archvo   :  dbConnect.php
-  * Funcion  :  Variables de conexion a la base de datos 
+  * Funcion  :  Variables de conexion a la base de datos recibidas del archivo .env
   */
 
 	$hostname = getenv('MYSQL_HOST');
