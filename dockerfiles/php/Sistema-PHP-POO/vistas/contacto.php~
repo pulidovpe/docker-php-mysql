@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8"/>
+  <title> <?php echo "$titulo1"; ?>   </title>
+  
+  <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+</head>
+ 
+<body>
+<div id="contenedor">
+ 
+
+<div id="encabezado">
+
+
+<table border=0 align=center>
+   <tr>
+    <th> <?php echo "$titulo1 $nombre"; ?>   </th>
+   </tr>
+</table> 
+ 
+</div>
+
+<div id=datatable>
+
+<table border=0 align=center>
+   <tr>
+    <th>No </th> <th>NOMBRE</th> <th>TLF</th>
+   </tr>        
+   
+   <?php 
+
+   foreach($item as $fila) {
+
+   ?>
+
+       <tr>
+         <td width=20>  <?php echo $fila['con_id'] ?> </td>
+         <td width=300> <?php echo $fila['con_nombre'] ?></td>
+         <td width=150> <?php echo $fila['con_tlf'] ?></td>
+
+       </tr> 
+
+   <?php
+   }
+   ?>
+
+</table>
+
+</div>
+</div>
+
+</body>
+</html>  

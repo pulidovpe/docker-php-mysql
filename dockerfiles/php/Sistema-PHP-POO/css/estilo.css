@@ -1,0 +1,295 @@
+/**
+	* Archivo de Estilos
+	* css/estilo.css
+	* Proyecto Base PHP POO MVC
+	*/
+
+* {
+	margin: 0px;  
+}
+
+body {
+	background: steelblue;
+	color: white;
+	font-family: Arial;
+	font-size: 14px;
+	text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+}
+
+header {
+	background: url(../inc/img/cabecera1.png) top; 
+	background-size: 100% 135px;
+	border-radius: .5em .5em 0em 0em;
+	font-size: 16px;
+	height: 130px;
+	margin: 5px auto;  /* mio */
+	padding-top: 5px;
+	position: relative;  /* mio */
+	width: 1000px;  /* mio */ 
+	z-index: 1;
+}
+
+footer {
+	background: url(../inc/img/pie.png) center bottom;
+	background-size: 100%;
+	border-radius: 0em 0em .5em .5em;
+	height: 50px; 
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;  /* mio */ 
+	width: 1000px;  /* mio */ 
+	z-index: 1;
+}
+
+/*
+ * Textos centrados en una caja
+*/
+#centro,#centro_contenedor {
+	/* border: 1px solid orange;
+	color: black; */
+	border-radius: 2em 2em 0em 0em;
+	font-family: arial;
+	height: 10px;
+	margin: 0px auto;
+	padding: 10px;
+	position: relative;
+	vertical-align: middle;
+	width: 50%;
+	z-index: 2;
+}
+
+#contenedor {
+	background: url(../inc/img/fondo.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 390px;
+	margin: 0 auto; 
+	position: relative;  /* mio */ 
+	z-index: 1;
+}
+
+#div-clave {
+	display: none;
+}
+
+#encabezado {
+	color: white; 
+	font-size: 10px;
+	height: 80px;
+	margin-top: 30px;
+	margin-left: 30px;
+	text-shadow: black 0.2em 0.2em 0.4em;
+	/*vertical-align: left; */
+	width: 130px; 
+}
+
+#barra-titulo {
+	font-size: 16px;
+	height: 30px;
+	margin-top: -5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	/* margin: 0px auto;  mio */
+	position: relative;  /* mio */ 
+	z-index: 1;
+}
+
+#barra-titulo,#contenedor,#usuarios,#pie {
+	width: 1000px;  /* mio */
+}
+/****************** MODULOS **********************/
+#modelo-titulo {
+	background: #B0171F; 
+	border: 1px solid #B0171F;
+	color: white; 
+	height: 30px;  
+	text-shadow: black 0.2em 0.2em 0.4em;
+}
+
+#modulo-datos,#modulo-inicio {
+	background: rgba(0,0,0,.5); /* Para que la ventana sea transparente */
+	margin: 0px auto;
+	overflow: hidden; /* Para que los div con floats se queden dentro */
+	padding: 10px;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 2;
+}
+#modulo-datos {
+	height: 320px;
+	width: 75%;
+}
+#modulo-inicio {
+	width: 40%;
+}
+#modulo-datos th {
+	/*font-size: 14;
+	background-color: #B0171F; */
+	background-color: steelblue;
+	color: white;  
+	margin: 0;               
+}
+#modulo-inicio th {
+	/*font-size: 14;
+	background-color: #B0171F; */
+	background-color: steelblue;
+	color: white;  
+	margin: 0;               
+}
+#modulo-datos tr {      
+	 color: black; 
+	 background-color: #dedede; 
+	 /*font-size: 14;*/
+	 margin: 0;
+}
+#modulo-datos td {      
+	text-align: center;
+}
+#modulo-datos tr:hover td {
+	 background: rgba(0,0,0,.5);
+	 color: black;
+}
+/*********** PIE DE LAS PAGINAS *************/
+
+#titulo {
+	/*background: rgba(0,0,0,.5); */
+	background-color: #B0171F;
+	color: white; 
+	height: 120px;
+	text-align: center;
+	text-shadow: black 0.2em 0.2em 0.4em;
+}
+
+#usuarios {
+	/* Rojo - Vinotinto */
+	background-color: #B0171F;
+	text-align: center;
+	height: 20px;  
+	margin-left: auto;
+	margin-right: auto; 
+	font-size: 12px;
+}
+
+
+/********** Opciones del Menu ***************/
+#menuOp {
+	/*background: gray;*/
+	padding: 10px;
+	font-family: Arial;
+	font-size: 12px;
+	text-align: center;
+}
+#menuOp article {
+	background: #ccc;
+	border: 1px solid white;
+	color: black;
+	display: inline-block;
+	height: 95px;  /* mio */
+	margin: 3px;
+	padding: 8px;
+	vertical-align: middle;  /* mio */
+	width: 80px;
+}
+#menuOp article img {
+	-webkit-transition: .2s;
+	-moz-transition: .2s; 
+	/* ie */
+}
+#menuOp article:hover img {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1); 
+	/* ie */
+}
+
+/***  Divs para posicionar elementos de los formularios ***/
+
+.botones {
+	clear: both;
+}
+
+.campo1 {
+	/*border: 1px solid red;*/
+	display: table-cell;
+	width: 200px;
+}
+
+.campo2 {
+	/*border: 1px solid red;*/
+	display: table-cell;
+	width: 50px;
+}
+.cerrar_sesion {
+	/*
+	border: 1px solid #B0171F;
+	*/ 
+	float: right; 
+	margin: 0px 0px;
+	padding: 0px 0px;
+	position: relative;
+	width: auto;
+	z-index: 2;
+}
+
+.curvas {
+	-webkit-border-radius: 10px;
+	/*-moz-border-radius: 10px;*/
+	border-radius: 10px;
+}
+
+.etiqueta1 {
+	/*border: 1px solid green;*/
+	display: table-cell;
+	width: 100px;
+}
+
+.etiqueta2 {
+	/*border: 1px solid green;*/
+	display: table-cell;
+	width: 250px;
+}
+
+.fondo-sesion {
+	background: rgba(0,0,0,.5);
+	margin-top: -8px;
+	left: 40%;
+	overflow: hidden; /* Para que los div con floats se queden dentro */
+	position: relative;
+	text-align: center;
+	vertical-align: text-bottom;
+	width: 20%;
+	z-index: 2;
+}
+
+.formula-campo {
+	/*border: 1px solid blue;*/
+	height: 20px;
+	margin-left: 4px;
+	padding-top: 6px;
+	position: relative;
+	text-align: left;
+	width: 300px;
+	z-index: 2;
+}
+
+.rojo {
+	background-color: red;
+	color: white;
+}
+
+.t-fila {
+	display: table-row;
+}
+
+.t-celda {
+	display: table-cell;
+	width: 33.3%;
+}
+
+.t-tabla {
+	display: table;
+}
