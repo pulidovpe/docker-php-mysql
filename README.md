@@ -1,14 +1,21 @@
 # Docker-php-mysql
 
-> En este proyecto, pretendo probar formas alternativas para desplegar aplicaciones desarrolladas en cualquier lenguaje y dejarlas funcionando en producción; "independientemente" del servicio de hosting que se use para tal fin. Es obvio, dicho servicio debe soportar esta tecnología.
-> El proyecto es algo antiguo pero es funcional. Consta de una pequeña aplicación de prueba la cual se ejecutará en un contenedor aislado, pero al que también se puede tener acceso conociendo los parámetros adecuados de red y puerto. También consta de una base de datos, con una tabla y un par de registros ejecutándose en otro contenedor. Se agregaron también 2 contenedores más al proyecto. Uno con la aplicación PhpMyAdmin ya configurada para poder administrar la base de datos importada y otro con MailCatcher; el cual es un servicio que ejecuta un simple servidor SMTP que captura todos los mensajes enviados y los muestra en una interfaz web.
+En este proyecto, pretendo probar formas alternativas para desplegar aplicaciones desarrolladas en cualquier lenguaje y dejarlas funcionando en producción; "independientemente" del servicio de hosting que se use para tal fin. Es obvio, dicho servicio debe soportar esta tecnología, cuyo nombre es [Docker](https://www.docker.com/).
 
+El proyecto es algo antiguo pero es funcional. Consta de una pequeña aplicación de prueba la cual se ejecutará en un contenedor aislado, pero al que también se puede tener acceso conociendo los parámetros adecuados de red y puerto. También consta de una base de datos, con una tabla y un par de registros ejecutándose en otro contenedor. Se agregaron también 2 contenedores más al proyecto. Uno con la aplicación PhpMyAdmin ya configurada para poder administrar la base de datos importada y otro con MailCatcher; el cual es un servicio que ejecuta un simple servidor SMTP que captura todos los mensajes enviados y los muestra en una interfaz web.
+
+## ¿Que es Docker?
+
+>Docker es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstracción y automatización de virtualización de aplicaciones en múltiples sistemas operativos.2​ Docker utiliza características de aislamiento de recursos del kernel Linux, tales como cgroups y espacios de nombres (namespaces) para permitir que "contenedores" independientes se ejecuten dentro de una sola instancia de Linux, evitando la sobrecarga de iniciar y mantener máquinas virtuales.3​. 
+
+Cita tomada de [Wikipedia](https://es.wikipedia.org/wiki/Docker_(software))
 
 ## Screenshots / Capturas de Pantalla
 
 
 ## Tech-framework used / Tecnologías Usadas
 - Docker  17.05.0-ce 
+	- Para [Linux](https://docs.docker.com/install/linux/docker-ce/debian/)
 	- Para [Windows](https://docs.docker.com/docker-for-windows/) 
 	- Para [Mac](https://docs.docker.com/docker-for-mac/)
 - Docker-compose 1.22.0
@@ -36,7 +43,8 @@ docker-compose down
 ```
 
 Una vez ejecutándose, puede abrirse un navegador y dirigirse a la dirección http://localhost:8080 para ver la aplicación web. Ó, si desea revisarse la base de datos usando la aplicación phpmyadmin, basta con dirigirse a la url http://localhost:8181
-Para ingresar en la app usar estos valores:
+
+Para ingresar en la app de PHP puede usar estos valores:
 - Usuario: 99009009
 - Contraseña: 123456
 
