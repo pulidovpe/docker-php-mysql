@@ -41,7 +41,7 @@ Para detenerlos:
 ```Shell
 docker-compose down
 ```
-O para eliminarlos y luego eliminarlos:
+O para "matar" los servicios y luego eliminarlos:
 ```Shell
 docker-compose kill
 docker-compose rm
