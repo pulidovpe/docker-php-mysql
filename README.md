@@ -41,6 +41,11 @@ Para detenerlos:
 ```Shell
 docker-compose down
 ```
+O para eliminarlos y luego eliminarlos:
+```Shell
+docker-compose kill
+docker-compose rm
+```
 
 Una vez ejecutándose, puede abrirse un navegador y dirigirse a la dirección http://localhost:8080 para ver la aplicación web. Ó, si desea revisarse la base de datos usando la aplicación phpmyadmin, basta con dirigirse a la url http://localhost:8181
 
